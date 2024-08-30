@@ -1,5 +1,5 @@
 book-controller
---------------------------
+================================================================
 RES END POINTS:
 GET
 /api/books/{id}
@@ -20,32 +20,28 @@ POST: /api/books
 {
 "book_name":"Mahabharatham"
 }
-
 POST: /api/books/author/{id}/  @RequestBody author information
 {
 "author_name":"Elango"
 }
-
 POST: /api/books/genre/{id}/  @RequestBody genre information
 {
 "genre_name":"history"
 }
-
 POST: /api/books/librarybranch/{id} @RequestBody librarybranch information
 {
 "libraryBranchName":"Ghandhi National Library",
  "libraryBranchLocation":"Chennai",
   "workingHours":"Mon-Fri 9AM-6PM"
 }
-
 PUT: /api/books/{id}
 {
 "book_name":"Mahabharatham"
 }
-================================================================
+
 
 author-controller
-
+================================================================
 GET
 /api/authors/{id}
 
@@ -72,19 +68,17 @@ POST: /api/authors
 {
 "author_name":"Kalki"
 }
-
 POST: /api/authors/book/{id}
 {
 "book_name":"Ponniyin Selvan"
 }
-
 PUT: /api/authors/{id}
 {
 "author_name":"Kalki V1.2"
 }
-================================================================
-borrower-controller
 
+borrower-controller
+================================================================
 GET
 /api/borrowers/{id}
 
@@ -111,15 +105,14 @@ POST
   "borrowerDOB": "string",
   "borrowerPhone": "string"
 }
-
 POST
 /api/borrowers/book/{id}
 {
 "book_name": "string"
 }
-================================================================
-genre-controller
 
+genre-controller
+================================================================
 GET
 /api/genres/{id}
 
@@ -137,18 +130,17 @@ POST
 {
 "genre_name": "string"
 }
-
 POST
 /api/genres/book/{id}
 {
 "book_name": "string"
 }
-
 GET
 /api/genres
-================================================================
-library-branches-controller
 
+
+library-branches-controller
+================================================================
 GET
 /api/library-branches/{id}
 
