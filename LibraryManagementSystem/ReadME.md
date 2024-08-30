@@ -3,16 +3,22 @@ book-controller
 RES END POINTS:
 GET
 /api/books/{id}
+
 DELETE
 /api/books/{id}
+
 GET
 /api/books
+
 GET
 /api/books/genre/{id}
+
 GET
 /api/books/author/{id}
+
 GET
 /api/books/library-branch/{id}
+
 GET
 /api/books/borrower/{id}
 
@@ -20,20 +26,24 @@ POST: /api/books
 {
 "book_name":"Mahabharatham"
 }
+
 POST: /api/books/author/{id}/  @RequestBody author information
 {
 "author_name":"Elango"
 }
+
 POST: /api/books/genre/{id}/  @RequestBody genre information
 {
 "genre_name":"history"
 }
+
 POST: /api/books/librarybranch/{id} @RequestBody librarybranch information
 {
 "libraryBranchName":"Ghandhi National Library",
  "libraryBranchLocation":"Chennai",
   "workingHours":"Mon-Fri 9AM-6PM"
 }
+
 PUT: /api/books/{id}
 {
 "book_name":"Mahabharatham"
