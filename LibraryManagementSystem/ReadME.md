@@ -78,10 +78,12 @@ POST: /api/authors
 {
 "author_name":"Kalki"
 }
+
 POST: /api/authors/book/{id}
 {
 "book_name":"Ponniyin Selvan"
 }
+
 PUT: /api/authors/{id}
 {
 "author_name":"Kalki V1.2"
@@ -115,6 +117,7 @@ POST
   "borrowerDOB": "string",
   "borrowerPhone": "string"
 }
+
 POST
 /api/borrowers/book/{id}
 {
@@ -140,11 +143,13 @@ POST
 {
 "genre_name": "string"
 }
+
 POST
 /api/genres/book/{id}
 {
 "book_name": "string"
 }
+
 GET
 /api/genres
 
